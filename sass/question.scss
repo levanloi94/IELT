@@ -1,0 +1,45 @@
+.question{
+    &-heading{
+        margin-bottom: 2.3rem;
+    }
+    &-desc{
+        line-height: 2.4rem;
+        & span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    &-content{
+        position: relative;
+    }
+    &-content::before{
+        content: "";
+        height: 100%;
+        width: 47rem;
+        background-color: $bg-color-3;
+        position: absolute;
+        top: 0;
+        left: -27rem;
+        z-index: -1;
+    }
+    &-sidebar{
+        background-color: white;
+    }
+    &-item{
+        font-weight: bold;
+        line-height: 2.1rem;
+        font-size: 1.6rem;
+        padding: 2.2rem 0;
+        
+    }
+    &-item:not(:last-child){
+        border-bottom: 1px solid $border-color;
+    }
+    &-link{
+        transition: .3s ease-in-out;
+        &:hover{
+        color: $primary-color;
+        }
+    }
+   
+}

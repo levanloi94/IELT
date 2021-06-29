@@ -1,0 +1,113 @@
+.contact{
+    &-sidebar{
+        padding-top: 11.5rem;
+    }
+    &-heading{
+        margin-bottom: 3rem;
+    }
+    &-item{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    &-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    &-left{
+        padding-left: 2rem;
+    }
+    &-link{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: bold;
+        transition: .3s ease-in-out;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    &-form-input, &-form-text{
+        outline: none;
+        border: none;
+    }
+    &-form-contro{
+        display: block;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem .5rem 1.5rem 1.7rem;
+        border: 1px solid $border-color;
+        margin-bottom: 1rem;
+        transition: .3s ease-in-out;
+        &:focus{
+            border: 1px solid $primary-color;
+        }
+    }
+    &-form-block{
+        display: flex;
+        justify-content: space-between;
+        & .contact-form-contro{
+            width: calc(50% - .5rem);
+        }
+    }
+    &-select-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(50% - .5rem);
+        border: 1px solid $border-color;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+   
+    &-form-text{
+        font-family: $primary-font;
+        resize: none;
+        height: 12rem;
+    }
+    &-custom{
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1rem;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &-form-select{
+        background: transparent;
+        outline: none;
+        border: none;
+        appearance: none;
+        width: 100%;
+        cursor: pointer;
+        padding: 1.5rem .5rem 1.5rem 1.7rem;
+        &:focus {
+            border: 1px solid $primary-color;
+        }
+        
+    }
+    &-btn{
+        display: block;
+        margin-left: auto;
+        background-color: $test-color-4;
+        border: none;
+        padding-left: 6.3rem;
+        padding-right: 6.3rem;
+        margin-top: 3.3rem;
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+    @media screen and(max-width:1023px){
+        &-content{
+            padding-bottom: 3rem;
+        }
+    }
+    @media screen and (max-width:767px){
+        &-sidebar{
+            padding:3rem 1.5rem;
+        }
+    }
+}

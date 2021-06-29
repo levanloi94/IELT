@@ -1,0 +1,70 @@
+.refer{
+    padding: 6rem 1.5rem;
+    position: relative;
+    overflow-x: hidden;
+    &-heading{
+        margin-bottom: 3rem;
+        position: relative;
+        padding-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide{
+        width: 27rem;   
+        text-align: center;
+        cursor: pointer;
+    }
+    &-img{
+        // width: 27rem;   
+        margin-bottom: 1.5rem;
+    }
+    &-title{
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2.1rem;
+        color: $bg-color-2;
+        margin-bottom: .5rem;
+    }
+    &-date{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    &-navigation{
+        // position: absolute;
+        // top: 3rem;
+        // right:0;
+    }
+    .swiper-container{
+        overflow: unset;
+    }
+    .swiper-button-prev{
+        border-right: 1px solid gray;
+        padding-right: 2.5rem;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        height: 2rem;
+        width: 2rem;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 2rem;
+        color: $primary-color;
+        
+    }
+    
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: -8rem;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 19px;
+    }
+    @media screen and (max-width:1335px){
+        .swiper-container{
+            overflow: hidden;
+        }        
+    }
+}

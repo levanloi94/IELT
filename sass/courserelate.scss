@@ -1,0 +1,113 @@
+.courserelate{
+    margin-bottom: 7rem;
+    padding: 0 1.5rem;
+    &-title{
+        margin-bottom: 3rem;
+    }
+    &-item{
+        width: 100%;
+        cursor: pointer;
+    }
+    &-item-top{
+        display:flex;
+        align-items: stretch;
+        // justify-content:;
+        background-color: $test-color-3;
+    }
+    &-item-left{
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.9rem;
+        padding: 1.5rem 2rem;
+    }
+    &-item-right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right:  1.7rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    &-item-month{
+        
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+    &-item-type{
+       
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &-item-desc{
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        & span{
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 1.4rem;
+        }
+    }
+    &-item-teacher{
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        margin-bottom: 1.8rem;
+    }
+    &-item-avatar{
+        height: 5rem;
+        width: 5rem;
+    }
+    &-item-box{
+        padding-left: 1rem
+    }
+    &-item-name{
+        font-weight:bold;
+    }
+    &-item-bottom{
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-item-price{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #37B775;
+    }
+    &-item-row2{
+        padding:1.4rem 0;
+        background-color: $bg-color-3;
+    }
+    &-item-btn{
+        margin-right: unset;
+    }
+    .swiper-slide:nth-child(1 ){
+        .courserelate-item-left{
+            background-color: $test-color-light-3;
+        
+        }
+        .courserelate-item-top{
+            background-color: $test-color-3;
+        }
+    }
+    .swiper-slide:nth-child(2){
+        .courserelate-item-left{
+            background-color: $test-color-light-1;
+        }
+        .courserelate-item-top{
+            background-color: $test-color-1;
+        }
+    }
+    .swiper-slide:nth-child(3){
+        .courserelate-item-left{
+            background-color: $test-color-light-2;
+        }
+        .courserelate-item-top{
+            background-color: $test-color-2;
+        }
+    }
+}

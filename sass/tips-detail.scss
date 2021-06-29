@@ -1,0 +1,130 @@
+.tipsdetail{
+    &-content{
+        padding-bottom: 1rem;
+    }
+    &-breadcrumb{
+        margin-bottom: 4rem;
+    }
+    &-wrap{
+        margin-bottom: 4.2rem;
+    }
+    &-img{
+        margin-bottom: 2rem;
+    }
+    &-bottom{
+        margin-bottom: 1.7rem;
+    }
+    &-title{
+        font-size: 3rem;
+        line-height: 3.9rem;
+        color: $bg-color-2;
+        margin-bottom:1rem;
+    }
+    &-desc{
+        line-height: 2.4rem;
+        & span{
+            font-weight: bold;
+        }
+    }
+    &-fbcmt-heading{
+        display: block;
+        font-size: 3rem;
+        line-height: 2.6rem;
+        font-weight: bold;
+        color: $bg-color-2;
+        margin-bottom: 2rem;
+    }
+    &-cmt-contro{
+        display: flex;
+        margin-bottom: 2.5rem;
+    }
+    &-cmt-avatar{
+        height: 5rem;
+        width: 5rem;
+        border-radius: .4rem;
+    }
+    &-cmt-right{
+        margin-left: 3rem;
+        width: 100%;
+        &.be-replied{
+            position: relative;
+            // color: red;
+            &::before{
+                content: "";
+                width: 1px;
+                height: 87%;
+                background-color: $border-color;
+                position: absolute;
+                left: -5.2rem;
+                top: 6rem;
+            }   
+        }
+    }
+    &-input{
+        margin-bottom: 3rem;
+    }
+    &-cmt-input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F8F8F8;
+        border-radius: .4rem;
+        padding-right: .5rem;
+        input{
+            width: 100%;
+            padding: 1.5rem;
+            line-height: 1.9rem;
+            color:#959595;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+    }
+    &-cmt-name{
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+    &-cmt-time{
+        color: #999999;
+        font-style: italic;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    &-cmt-desc{
+        line-height: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    &-cmt-bottom{
+        margin-bottom: 2.5rem;
+    }
+    &-cmt-action{
+        font-weight: bold;
+        line-height: 1.9rem;
+        color: #7F7F7F;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:last-child{
+            margin-left: 2.5rem;
+        }
+        &:hover{
+            color: $primary-color;
+        }
+        &:first-child.is-active{
+            color: $primary-color;
+            
+        }
+    }
+    &-cmt-reply{
+        margin-bottom: 0;
+    }
+    &-cmt-seemore{
+        line-height: 1.9rem;
+        font-weight: bold;
+        text-decoration: underline;
+        transition: .3s ease-in-out;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    
+}

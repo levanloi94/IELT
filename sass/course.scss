@@ -1,0 +1,184 @@
+.coursedetail{
+    overflow-x: hidden;
+    &-breadcrumb{
+        margin-bottom: 7rem;
+    }
+    
+    &-info{
+        padding-bottom: 7rem;
+        margin-bottom: 7rem;
+        border-bottom: 1px solid $border-color;
+    }
+    &-info-heading{
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.9rem;
+        margin-bottom: 2.5rem;
+    }
+    &-info-list{
+        display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+    }
+    &-info-item{
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2.2rem;
+    }
+    &-info-img{
+        width: 2rem;
+        height: 2rem;
+    }
+    &-info-content{
+        margin-left: 1rem;
+    }
+    &-info-title{
+        line-height: 2.4rem;
+    }
+    &-info-detail{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: bold;
+    }
+    &-info-note{
+        color: $primary-color;
+    }
+    &-about{
+        padding-bottom: 7rem;
+      
+        border-bottom:1px solid $border-color ;
+    }
+    &-about-heading{
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.9rem;
+        margin-bottom: 2.5rem;
+        color:$test-color-4 ;
+    }
+    &-about-desc{
+        & span{
+            font-weight: bold;
+        }
+    }
+    &-sidebar{
+        padding: 0;
+        background-color: white;
+        
+    }
+    &-img-wrap{
+        position: relative;
+        width: 100%;
+        // overflow-x: hidden;
+    }
+    &-img{
+        position: absolute;
+        width: 50vw;
+        height: 60rem;
+        left: 0;
+        max-width: none;
+        object-fit: cover;
+
+    }
+    &-teacher{
+        position: relative;
+        margin-top: 60rem;
+        padding: 6.5rem 3rem 7rem 3rem;
+        text-align: center;
+        background-color: #F4F4F7;
+        margin-bottom: 3rem;
+    }
+    &-teacher-name{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-weight: bold;
+        margin-bottom: .3rem;
+    }
+    &-teacher-position{
+        margin-bottom: 2.3rem;
+    }
+    &-teacher-img{
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 2.9rem;
+    }
+    &-teacher-desc{
+        line-height: 2.4rem;
+    }
+    &-tag{
+        display: flex;
+        align-items: flex-start;
+    }
+    &-tag-title{
+        font-size: 2rem;
+        font-weight: bold;
+        list-style: 2.6rem;
+    }
+    &-tag-list{
+        margin-left: 3.6rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-tag-item{
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.9rem;
+        padding: 1.5rem 1.3rem;
+        background-color: #D8D8D8;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    @media screen and(max-width:1439px){
+        &-img{
+            position: inherit;
+            width: inherit;
+            height: inherit;
+        }
+        &-teacher{
+            position: relative;
+            margin-top: 0; 
+        }
+    }
+    @media screen and(max-width:767px){
+        &-content{
+            padding-bottom: 3rem;
+        }
+        &-sidebar{
+            width: 100%;
+        }
+        &-teacher{
+            padding: 3rem 1.5rem;
+        }
+        &-tag{
+            padding:1.5rem;
+        }
+        &-tag-item{
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: 1rem;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+           
+        }
+        &-info-item{
+            width: 50%;
+        }
+        &-ads{
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        &-info{
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        &-about{
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

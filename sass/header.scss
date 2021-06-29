@@ -1,0 +1,121 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    &-top{
+        background-color: white;
+        padding: 1rem 0; 
+        animation: fixedMenu  .3s linear;      
+    }
+    &-logo{
+        width: 8.3rem;
+        height: 6rem;
+        margin: 0 auto; 
+    }
+    &-bottom{
+        background-color: rgba(55, 31, 98, 1);
+        color: white;
+        // transition: .5s ease-in-out;
+    }
+    &-nav-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        position: relative;
+    }
+    &-menu-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -1.3rem;
+    }
+    &-menu-item{
+        padding:1.5rem 0;
+        transition: .3s ease-in-out;
+        position: relative;
+        &:hover{
+            background-color: $primary-color;
+        }
+        &:hover .header-menu-item-new{
+            box-shadow: rgba(99 ,99, 99, 0.2) 0px 2px 5px 5px;
+        }
+       
+    }
+    &-menu-link{
+        padding:1.5rem 1.3rem;
+        line-height: 1.9rem;
+    }
+    &-menu-item-new{
+        position: absolute;
+        right: -15%;
+    }
+    &-login{
+        padding:1rem 1.6rem ;
+        border-radius: .4rem;
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: $primary-color;
+        cursor: pointer;
+        transition: .3s linear;
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+            
+        }
+    }
+    .collapse-menu{
+        display: none;
+    }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+        background-color: $primary-color;
+    }
+    @media screen and(max-width:767px){
+        &-top{
+           padding: .5rem 0;    
+        }
+        &-logo{
+            width: 6rem;
+            height: 4rem;
+        }
+        &-login{
+            padding:0.8rem ;
+        }
+        .collapse-menu{
+            display: block;
+        }
+        .hamburger{
+            padding: .8rem 0;
+        }
+        &-menu{
+            position: absolute;
+            top: 4.3rem;
+            margin: 0 -1.7rem;
+            transform: translateX(-100%);
+            transition: .3s ease-in-out;
+            &.is-active{
+                transform: translateX(0);
+            }
+        }
+        &-menu-list{
+            display: block;
+            margin-left: 0;
+            background-color: $bg-color-2;
+            height: 100vh;
+            width: 30rem;
+        }
+        &-menu-item-new{
+            position: relative;
+            right:0;
+            
+        }
+        &-menu-item{
+            padding-left: 1rem;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.new-hightlight{
+    background-color: $primary-color;
+    color: white;
+    padding: .3rem .6rem ;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: .2rem;
+    display: inline-block;
+}
+.swiper-container {
+    // width: 100%;
+    // height: 100%;
+}
+.swiper-button-prev{
+    border-right: 1px solid gray;
+    padding-right: 2.5rem;
+}
+.swiper-button-next, .swiper-button-prev {
+    height: 2rem;
+    width: 2rem;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem;
+    color: $primary-color;
+}
+
+// .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+//     left: -8rem;
+// }
+// .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+//     right: 19px;
+// }
+.custom-navigation{
+    display: flex;
+    padding: 1rem 0;
+}
+.custom-nav-btn{
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 0 0rem;
+    color: $primary-color;
+    cursor: pointer;
+    &.swiper-button-disabled{
+        color:gray;
+    }
+    &:first-child{
+        padding-right: 1rem;
+    }
+    &:last-child{
+        padding-left: 1rem;
+        border-left: 1px solid #69578A;
+    }
+}

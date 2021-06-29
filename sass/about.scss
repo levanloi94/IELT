@@ -1,0 +1,126 @@
+.about{
+    overflow: hidden;
+    
+    & .container{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    &-wrap{
+        display: flex;
+    }
+    &-content{
+        padding-top: 6rem;
+        padding-right: 3rem;
+        padding-bottom: 6.7rem;
+        width: 58.33%;
+        position: relative;
+    
+        &::before{
+            content: "";
+            height: 87rem;
+            width: 87rem;
+            border-radius: 50%;
+            background-color: $bg-color-3;
+            position: absolute;
+            bottom: -40rem;
+            left: -45rem;
+            z-index: -1;
+        }
+    }
+    
+    &-heading{
+        margin-bottom: 2.3rem;
+        color: $bg-color-2;
+    }
+    &-desc{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 3.8rem;
+        & span{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    &-count-list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+    }
+    &-count-item{
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+    &-count-heading{
+        font-size: 5rem;
+        line-height: 6.6rem;
+        color: $primary-color;
+    }
+    &-count-title{
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+    @media screen and(max-width:1230px){
+        padding-left: 0;
+        padding-right: 0;
+        & .container{
+            padding-right: 0;
+            // padding-left: 0;
+        }
+    }
+    @media screen and(max-width:1023px){
+        &-content{
+            padding-top: 3rem;
+        }
+        
+    }
+    @media screen and(max-width:767px){
+        padding-left: 0;
+        & .container{
+           
+            padding-left: 0;
+        }
+        &-wrap{
+            display: block;
+        }
+        &-content{
+            width: 100%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 3rem;
+        }
+        .sidebar{
+            width: 100%;
+        }
+        &-count-list{
+            justify-content: center;
+        }
+        &-count-item{
+            margin-bottom: 1rem;
+        }
+        &-count-heading{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 4rem;
+        }
+        &-count-title{
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        
+    }
+}
+.decor-img{
+    height: 40rem;
+    background-image: url(../img/decor-bg.png);
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+@media screen and(max-width:1023px){
+    .decor-img{
+        display: none;
+    }  
+}
