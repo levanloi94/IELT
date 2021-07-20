@@ -2,10 +2,13 @@
     padding: 6rem 1.5rem;
     position: relative;
     overflow-x: hidden;
+    .container{
+        padding: 0 1.5rem;
+    }
     &-heading{
         margin-bottom: 3rem;
         position: relative;
-        padding-left: 1.5rem;
+        // padding-left: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -18,6 +21,14 @@
         width: 27rem;   
         text-align: center;
         cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover{
+            transform: translateY(-10%);
+            box-shadow: rgba(99 ,99, 99, 0.2) 0px 2px 5px 5px;
+        }
+        &:hover .refer-title{
+            color: $primary-color;
+        }
     }
     &-img{
         // width: 27rem;   

@@ -49,6 +49,17 @@
             font-weight: bold;
             display: block;
             margin-bottom: 1.4rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+        & strong{
+            display: block;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
         }
     }
     &-item-teacher{
@@ -109,5 +120,12 @@
         .courserelate-item-top{
             background-color: $test-color-2;
         }
+    }
+    .swiper-container {
+        padding-bottom: 35px;
+      }
+    .swiper-container-horizontal > .swiper-pagination {
+        position: absolute;
+        bottom: 0;
     }
 }

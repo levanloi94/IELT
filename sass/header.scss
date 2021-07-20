@@ -3,7 +3,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     z-index: 100;
     &-top{
@@ -25,8 +24,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1.5rem;
         position: relative;
+        // padding: 0 1.5rem;
     }
     &-menu-list{
         display: flex;
@@ -35,7 +34,7 @@
         margin-left: -1.3rem;
     }
     &-menu-item{
-        padding:1.5rem 0;
+        padding:1.5rem 1.3rem;
         transition: .3s ease-in-out;
         position: relative;
         &:hover{
@@ -44,15 +43,56 @@
         &:hover .header-menu-item-new{
             box-shadow: rgba(99 ,99, 99, 0.2) 0px 2px 5px 5px;
         }
+        &:hover .header-icon-sub{
+            transform: rotate(90deg);
+        }
+        &:hover .header-sub-menu{
+            opacity: 1;
+            visibility: visible;
+        }
        
     }
-    &-menu-link{
+    &-icon-sub{
+        display: inline-block;
+        margin-left: 1rem;
+        transition: .3s ease-in-out;
+    }
+    &-sub-menu{
+        position: absolute;
+        background-color: $primary-color;
+        width: 150%;
+        left: 0;
+        top:4.6rem;
+        transition: .3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &-sub-menu-item{
+        color: white;
+        width: 100%;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        
+        &:not(:last-child){
+            border-bottom: 1px solid $border-color;
+        }
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+    &-sub-menu-link{
+        display: block;
         padding:1.5rem 1.3rem;
         line-height: 1.9rem;
     }
+    &-menu-link{
+        line-height: 1.9rem;
+        display: inline-block;
+    }
     &-menu-item-new{
-        position: absolute;
-        right: -15%;
+        position: relative;
+        bottom: .2rem;
     }
     &-login{
         padding:1rem 1.6rem ;
@@ -76,6 +116,9 @@
         background-color: $primary-color;
     }
     @media screen and(max-width:767px){
+        &-nav-wrap{
+            padding: unset;
+        }
         &-top{
            padding: .5rem 0;    
         }
@@ -116,6 +159,15 @@
         }
         &-menu-item{
             padding-left: 1rem;
+            &.is-active .header-icon-sub{
+                transform: rotate(90deg);
+            }
+            &.is-active .header-sub-menu{
+                display: block;
+            }
+        }
+        &-sub-menu{
+            display: none;
         }
     }
 }

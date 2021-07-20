@@ -1,5 +1,6 @@
 .teachers{
-    padding:7rem 1.5rem;
+    padding:7rem 0;
+    
     &-item{
         transition: .3s ease-in-out;
         &:hover .teachers-img{
@@ -33,5 +34,15 @@
     }
     .swiper-wrapper{
         cursor: pointer;
+    }
+    .swiper-container {
+        padding-bottom: 35px;
+      }
+    .swiper-container-horizontal > .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+    }
+    @media screen and(max-width:767px){
+        padding: 3rem 0;
     }
 }

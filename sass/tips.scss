@@ -1,6 +1,7 @@
 .tips{
     padding: 6rem 0;
     background-color: $bg-color-2;
+    // overflow: hidden;
     &-heading-title{
         color: white;
         margin-bottom: 2rem;
@@ -8,9 +9,6 @@
     &-wrap{
         display: flex;
         position: relative;
-    }
-    &-img-wrap{
-        width: 50%;
     }
     &-content{
         width: 50%;
@@ -103,7 +101,7 @@
         position: absolute;
         z-index: 1;
         bottom: -14rem;
-        right: -30rem;
+        right: -20rem;
         box-shadow: 1rem 1rem 3rem rgba(0,0, 0, 0.16) ;
     }
     @media screen and(max-width:1500px){

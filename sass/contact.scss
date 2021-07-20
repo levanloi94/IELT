@@ -82,6 +82,8 @@
         width: 100%;
         cursor: pointer;
         padding: 1.5rem .5rem 1.5rem 1.7rem;
+        transition: .3s ease-in-out;
+        border: 1px solid transparent;
         &:focus {
             border: 1px solid $primary-color;
         }

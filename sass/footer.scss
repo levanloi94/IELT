@@ -33,7 +33,7 @@
         // padding-right: 1.6rem;
     }
     &-center-item{
-        padding-right: 7rem;
+        padding-right: 5rem;
         text-transform: uppercase;
         font-weight: bold;
         color: $bg-color-2;
@@ -164,12 +164,18 @@
     @media screen and(max-width:767px){
         &-top{
             display: block;
-            padding: 0 1rem;
+            padding: 0;
             padding-bottom: 1rem;
         }
+
         &-logo{
-            width: 40%;
-            margin-bottom: 1rem;
+            display:block;
+            width: 30%;
+            margin: 0 auto;
+            margin-bottom: 1rem; 
+        }
+        &-img-logo{
+            width: 100%;
         }
         &-center{
             width: 100%;
@@ -209,10 +215,15 @@
     }
     @media screen and(max-width:410px){
         &-center-list{
-            display: none;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
         }
-        &-right-item:not(:first-child){
-            border-left: 1px solid $border-color;
+        &-center-item{
+            width: 50%;
+        }
+        &-right-link{
+            font-size: 1.1rem;
         }
     }
 }

@@ -131,6 +131,11 @@
         margin-left: 1rem;
         margin-bottom: 1rem;
         cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+        }
     }
     @media screen and(max-width:1439px){
         &-img{
@@ -144,6 +149,9 @@
         }
     }
     @media screen and(max-width:767px){
+        &-breadcrumb{
+            margin-bottom: 3rem;
+        }
         &-content{
             padding-bottom: 3rem;
         }

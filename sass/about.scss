@@ -1,10 +1,5 @@
 .about{
     overflow: hidden;
-    
-    & .container{
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-    }
     &-wrap{
         display: flex;
     }
@@ -99,6 +94,7 @@
         }
         &-count-item{
             margin-bottom: 1rem;
+            width: 50%;
         }
         &-count-heading{
             font-size: 3rem;
@@ -115,7 +111,7 @@
 .decor-img{
     height: 40rem;
     background-image: url(../img/decor-bg.png);
-    // background-attachment: fixed;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
 }

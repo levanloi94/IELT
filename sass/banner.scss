@@ -10,8 +10,6 @@
     background-position:center;
     overflow: hidden;
     &-content{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
         position: relative;
         z-index: 99;
         text-align: left;
@@ -39,6 +37,10 @@
         font-size: 1.8rem;
         color: $secondary-color;
         margin-bottom: 3rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
         & strong{
             text-transform: uppercase;
             color: $primary-color;
@@ -144,8 +146,8 @@
         }    
     }
     @media screen and(max-width:767px){
-        height: 34rem;
-        padding-top: 5rem;
+        height: 40rem;
+        padding-top: 3rem;
         &-heading{
             font-size: 1.6rem;
             margin-bottom: .5rem;

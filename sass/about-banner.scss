@@ -18,12 +18,15 @@
             right: 0;
             left: 0;
             bottom: 0;
-            background-image: url(../img//about-banner-layer.png);
+            background-image: url(../img/about-banner-layer.png);
             z-index: -1;
         }
         & h1{
             position: relative;
             z-index: 50;
         }
+    }
+    @media screen and(max-width:767px){
+        padding-top: 9.5rem;
     }
 }
